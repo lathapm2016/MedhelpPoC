@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
     }
 
 
-
+//Method for loading the HTML code with SAML Token
 private void gotoMedHelp(){
         Button button = (Button) findViewById(R.id.buttonUrl);
 
@@ -53,9 +53,6 @@ private void gotoMedHelp(){
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Intent activityChangeIntent = new Intent(MainActivity.this, WebViewActivity.class);
-
-                // currentContext.startActivity(activityChangeIntent);
-
                 MainActivity.this.startActivity(activityChangeIntent);
             }
         });
